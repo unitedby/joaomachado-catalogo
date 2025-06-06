@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Turn.js Flipbook 2.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>João Machado - Catálogo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -69,6 +70,12 @@ document.getElementById('backSvg').addEventListener('click', function() {
   $('#book').turn('page', 1); // Go to first page
 });
   </script>
+
+<script>
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+</script>
 </body>
 
 </html>

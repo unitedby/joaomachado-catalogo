@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Turn.js Flipbook 2.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>João Machado - Catalogue</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -11,7 +13,7 @@
   <header>
     <div class="backHeader">
       <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23">
+<svg id="backSvg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23">
   <defs>
     <style>
       .cls-1 {
@@ -63,6 +65,12 @@
 
     updateImages();
   </script>
+
+<script>
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+</script>
 </body>
 
 </html>
