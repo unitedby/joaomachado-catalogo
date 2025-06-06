@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Tagus-Normal';
+    src: url('../assets/font/TagusNormal-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tagus-Medium';
+    src: url('../assets/font/TagusNormal-Medium.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+body.hide-overflow {
+    overflow: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*header*/
+
+header{
+    display: flex;
+        justify-content: space-between;
+        width: calc(90%);
+        position: absolute;
+        z-index: 10000;
+        right: 50%;
+        top: 20px;
+        transform: translate(50%, 50%);
+}
+.languageContainer{
+    text-align: right;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:7px;
+}
+
+.languageContainer p {
+    cursor: pointer;
+    font-family: 'Tagus-Normal', sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .languageContainer .active {
+    text-decoration: underline;
+  }
+
+  .languageContainer a{
+    text-decoration: none;
+    color: white
+  }
+  
+
+/* helpers */
+.book-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.book-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+/* book */
+
+.book {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.book .page {
+    height: 100%;
+}
+
+.book .page img {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.backHeader svg{
+
+    width:24px;
+    height:23px;
+}
